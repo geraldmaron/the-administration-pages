@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — The Administration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <a class="back" href="index.html">← BACK</a>
+  <p class="eyebrow">PRIVACY</p>
+  <h1>Privacy Policy</h1>
+  <p class="legal-meta">LAST UPDATED: 27 APRIL 2026</p>
+
+  <p>This Privacy Policy describes how <strong>The Administration</strong> ("the app", "we", "us") handles information when you use our iOS application. We have written this in plain language and kept it short on purpose.</p>
+
+  <div class="callout">
+    <p><strong>Summary:</strong> We use anonymous Firebase authentication (no email, no password). We do not track you. We do not run advertising SDKs. We do not sell or share your data. Free-form text you submit through the in-game "Trust Your Gut" feature is sent to our backend and to OpenAI for content moderation and outcome generation; no personal identity is attached.</p>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>Anonymous device identifier</h3>
+  <p>When you first launch the app, Firebase creates an anonymous user ID associated with your device install. This ID is used solely to authenticate requests to our backend so the game can save your progress and generate scenarios. It is not linked to your name, email, Apple ID, phone number, or any contact information.</p>
+
+  <h3>Game state</h3>
+  <p>Your game saves (country, cabinet, metric values, decision history) are stored locally on your device. If you choose to back up to iCloud, that backup is governed by Apple's iCloud privacy policy.</p>
+
+  <h3>Crash reports</h3>
+  <p>If the app crashes, Firebase Crashlytics sends a diagnostic report containing the crash stack trace, app version, OS version, and device model. No personal information is included.</p>
+
+  <h3>Free-form player input</h3>
+  <p>If you use the "Trust Your Gut" feature to submit a free-form policy command, that text is sent to our backend, then to OpenAI's content-moderation and language-model APIs to filter for safety and to generate the in-game outcome. The text is processed statelessly — no user identity is sent with it. We log moderation decisions (flagged categories, not the input itself) for safety auditing.</p>
+
+  <h3>Content reports</h3>
+  <p>If you tap "Report this content" on an AI-generated scenario or outcome, we store the reported content snippet, the report category, an optional note you write, the app version, and a server timestamp in a private Firestore collection. This is used solely to improve our safety filters.</p>
+
+  <h2>2. Information We Do <em>Not</em> Collect</h2>
+  <ul>
+    <li>Your name, email address, phone number, or contact information</li>
+    <li>Your Apple ID, iCloud account, or social media identifiers</li>
+    <li>Your location (precise or coarse)</li>
+    <li>Your contacts, photos, calendar, or other device data</li>
+    <li>Your IP address (beyond what is incidentally logged by our hosting infrastructure for abuse prevention)</li>
+    <li>Any data for advertising, retargeting, or sale to third parties</li>
+  </ul>
+
+  <h2>3. Third-Party Services</h2>
+  <p>The app uses these services and only these services:</p>
+  <ul>
+    <li><strong>Firebase (Google LLC)</strong> — anonymous authentication, Firestore database, Cloud Functions, Crashlytics. Governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a>.</li>
+    <li><strong>OpenAI</strong> — content moderation and language-model generation for free-form player commands and outcome resolution. Governed by <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">OpenAI's API data usage policies</a>. Per OpenAI's policy, data submitted via the API is not used to train their models.</li>
+    <li><strong>OpenRouter</strong> — model routing for some scenario generation. Governed by <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter's privacy policy</a>.</li>
+  </ul>
+
+  <h2>4. Data Retention</h2>
+  <p>Game saves are retained on your device until you delete them or uninstall the app. Anonymous Firebase user IDs are retained until you uninstall. Content reports are retained indefinitely for safety auditing. Crashlytics retains crash reports for up to 90 days.</p>
+
+  <h2>5. Children's Privacy</h2>
+  <p>The app is rated 12+ and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has used the app, contact us and we will delete any associated data.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>Because we do not collect personally identifying information, we have no way to look up "your" data on request. You can:</p>
+  <ul>
+    <li>Delete all local game saves via System → Restart Administration in the app</li>
+    <li>Uninstall the app to remove the anonymous Firebase user ID association from your device</li>
+    <li>Contact us with questions or to request that we delete a content report you submitted</li>
+  </ul>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>If this policy materially changes, we will update the "Last Updated" date above and present an in-app notice on next launch. Continued use of the app after a change constitutes acceptance of the new policy.</p>
+
+  <h2>8. Contact</h2>
+  <p>Questions or requests: <a href="support.html">see our Support page</a> for the current contact email.</p>
+
+  <footer class="footer">
+    <p>© 2026 Gerald Dagher.</p>
+  </footer>
+</main>
+</body>
+</html>
